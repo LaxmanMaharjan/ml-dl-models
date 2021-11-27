@@ -22,7 +22,7 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    install_requires=["requests","music21>=7","Pillow>=8"],
+    install_requires=["requests","music21>=7"],
     python_requires=">=3.6",
 )
 

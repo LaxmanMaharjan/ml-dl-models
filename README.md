@@ -26,10 +26,10 @@ from ml_dl_models import MelodyGenerator
 Now you are ready to create an Melody from a MelodyGenerator model.
 
 ```python
-mg = MelodyGenerator()
 data = {'keys':'c d e', 'default':True}
 path = '/home/LaxmanMaharjan/melody.mp3' # default value is 'melody.mp3' in same directory.
-mg.generate_melody(data = data, path = path)
+mg = MelodyGenerator(data = data, path = path)
+mg.generate_melody()
 ```
 You can also get the cached notes(notes that are already fetched to model) from Melody Generator.
 
@@ -37,4 +37,12 @@ You can also get the cached notes(notes that are already fetched to model) from 
 mg = MelodyGenerator()
 print(mg.get_cached_notes)
 ```
+You can instantiate MelodyGenerator class with default value of data and path.
+```python
+mg = MelodyGenerator()
+mg.generate_melody()
+```
+__Note:__
+If you use default value of data and path to instantiate MelodyGenerator class than data is chosen from one of the values from cached data.
+
 __Learn more about Data Representation [link](https://ml-dl-models.herokuapp.com/documentation)__
