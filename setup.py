@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ml_dl_models",
-    version="1.0.2",
+    version="1.0.3",
     author="Laxman Maharjan",
     author_email="lxmnmrzn17@gmail.com",
     description="Module to access machine learning and deep learning module",
